@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG scale</title>
+</head>
+<body>
+    
+    <!--https://svground.fr/transformations.php-->
+
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Changement d’échelle avec SVG</title>
+
+        <rect x="0" y="0" width="400" height="300"
+        style="fill:none;stroke:black;stroke-width:2px;"/>
+
+        <polygon points="40,40 40,100 160,40"
+        style="fill:none;stroke:slategray;stroke-width:6px;stroke-opacity:0.5;stroke-linejoin:round;"/>
+
+        <polygon points="40,40 40,100 160,40"
+        style="fill:none;stroke:slategray;stroke-width:6px;stroke-opacity:0.5;stroke-linejoin:round;"
+        transform="scale(2)"/>
+    </svg>
+
+
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Scale peut aussi servir à étirer des objets</title>
+
+        <rect x="0" y="0" width="400" height="300"
+        style="fill:none;stroke:black;stroke-width:2px;"/>
+
+        <circle cx="70" cy="70" r="30"
+        style="fill:none;stroke:thistle;stroke-width:6px;"/>
+
+        <circle cx="70" cy="70" r="30"
+        style="fill:none;stroke:turquoise;stroke-width:6px;"
+        transform="scale(2,1)"/>
+
+        <circle id="c3" cx="70" cy="70" r="30"
+        style="fill:none;stroke:gainsboro;stroke-width:6px;"
+        transform="scale(1,2.5)"/> <!--Ajout 2nde valeur pour étirer une forme-->
+    </svg>
+
+</body>
+</html>
+

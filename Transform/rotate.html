@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG rotate</title>
+</head>
+<body>
+    
+    <!--https://svground.fr/transformations.php-->
+
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" height="100%" xml:lang="fr" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet">
+
+        <title>Rotation d’un rectangle avec SVG</title>
+        
+        <rect xmlns="http://www.w3.org/2000/svg" id="background" x="0" y="0" width="400" height="300"/>
+        
+        <rect xmlns="http://www.w3.org/2000/svg" x="60" y="30" width="300" height="80"/>
+        
+        <!-- Transform rotate(30)-->
+        <rect xmlns="http://www.w3.org/2000/svg" x="105" y="62" width="220" height="80" transform="rotate(30, 200, 150)"/> <!-- Transform rotate(Deg,x, Y)-->
+
+        <!-- Rotation d’un carré sur lui même avec SVG-->
+        <rect x="150" y="100" width="100" height="100"
+        style="fill:none;stroke:darkmagenta;stroke-width:10px;stroke-linejoin:round;"
+        transform="rotate(45, 200, 150)"/>
+
+        <circle cx="200" cy="150" r="1"/><!-- Point d'origine pour rotate(45, X, Y)-->
+    </svg>
+
+
+    <style>
+        #background {
+            fill: none;
+            stroke: black;
+            stroke-width: 2px;
+        }
+        rect {
+            fill: none;
+            stroke: limegreen;
+            stroke-width: 14px;
+            stroke-linejoin: bevel;
+        }
+    </style>
+
+
+<svg width="400" height="300" xml:lang="fr"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<title>Changement d’échelle avec SVG</title>
+
+<rect x="0" y="0" width="400" height="300"
+style="fill:none;stroke:black;stroke-width:2px;"/>
+
+<polygon points="40,40 40,100 160,40"
+style="fill:none;stroke:slategray;stroke-width:6px;stroke-opacity:0.5;stroke-linejoin:round;"/>
+
+<polygon points="40,40 40,100 160,40"
+style="fill:none;stroke:slategray;stroke-width:6px;stroke-opacity:0.5;stroke-linejoin:round;"
+transform="scale(2)"/>
+
+</svg>
+
+</body>
+</html>
+

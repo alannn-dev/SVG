@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG skew</title>
+</head>
+<body>
+    
+    <!--https://svground.fr/transformations.php-->
+
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+        <title>skewX et skewY sur un cercle</title>
+        
+        <circle cx="200" cy="150" r="50"
+        style="fill:none;stroke:orchid;stroke-width:6px;stroke-opacity:0.5;"/>
+        
+        <circle cx="200" cy="150" r="50"
+        style="fill:none;stroke:powderblue;stroke-width:6px;"
+        transform="skewX(-25)"/>
+        
+        <circle cx="200" cy="150" r="50"
+        style="fill:none;stroke:palegreen;stroke-width:6px;"
+        transform="skewY(17.8)"/>
+    </svg>
+
+    <!--Multiples transform sur un carré-->
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Multiples transformations sur un carré</title>
+
+        <rect x="0" y="0" width="400" height="300"
+        style="fill:aliceblue;stroke:black;stroke-width:1px;"/>
+
+        <rect x="0" y="0" width="20" height="20"
+        style="fill:none;stroke:turquoise;stroke-width:2px;"
+        transform="scale(2.3)"/>
+
+        <rect x="0" y="0" width="20" height="20"
+        style="fill:none;stroke:turquoise;stroke-width:2px;"
+        transform="scale(2.3) translate(80,50)"/>
+
+        <rect x="0" y="0" width="20" height="20"
+        style="fill:none;stroke:turquoise;stroke-width:2px;"
+        transform="scale(2.3) translate(80,50) rotate(75)"/>
+
+        <rect x="0" y="0" width="20" height="20"
+        style="fill:none;stroke:turquoise;stroke-width:2px;"
+        transform="scale(2.3) translate(80,50) rotate(75) skewX(65)"/>
+    </svg>
+
+
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Changement d’échelle centré en SVG</title>
+
+        <ellipse cx="200" cy="150" rx="40" ry="25"
+        style="fill:none;stroke:lightgoldenrodyellow;stroke-width:3px;"/>
+
+        <!-- scale : 2 -->
+        <ellipse cx="200" cy="150" rx="40" ry="25"
+        style="fill:none;stroke:lightgoldenrodyellow;stroke-width:3px;"
+        transform="translate(-200,-150) scale(2)"/>
+
+        <!-- scale : 3 -->
+        <ellipse cx="200" cy="150" rx="40" ry="25"
+        style="fill:none;stroke:lightgoldenrodyellow;stroke-width:3px;"
+        transform="translate(-400,-300) scale(3)"/>
+
+        <!-- scale : 4 -->
+        <ellipse cx="200" cy="150" rx="40" ry="25"
+        style="fill:none;stroke:lightgoldenrodyellow;stroke-width:3px;"
+        transform="translate(-600,-450) scale(4)"/>
+    </svg>
+    
+</body>
+</html>

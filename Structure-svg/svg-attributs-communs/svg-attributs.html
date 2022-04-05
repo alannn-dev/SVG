@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG attributs</title>
+</head>
+<body>
+    
+    <!--https://svground.fr/structure.php#zonedessin-->
+
+    <svg width="400" height="300"
+        xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Utilisation de xml:base</title>
+        
+        <g>
+        <image xlink:href="http://example.com/images/vacances/été2008/àlaplage/chateaudesable.jpg"/>
+        <image xlink:href="http://example.com/images/vacances/été2008/àlaplage/lamer.jpg"/>
+        <image xlink:href="http://example.com/images/vacances/été2008/àlaplage/lesoiseaux.jpg"/>
+        </g>
+
+        <!-- est équivalent à : -->
+        <g xml:base="http://example.com/images/vacances/été2008/àlaplage/">
+        <image xlink:href="chateaudesable.jpg"/>
+        <image xlink:href="lamer.jpg"/>
+        <image xlink:href="lesoiseaux.jpg"/>
+        </g>
+    </svg>
+
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+ellipse{
+	stroke:black;
+	fill:none;
+}
+
+path{
+	stroke:darkturquoise;
+	stroke-linejoin:bevel;
+	stroke-width:4px;
+	fill:none;
+}

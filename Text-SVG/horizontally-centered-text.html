@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="text.css">
+    <title>SVG Text</title>
+</head>
+<body>   
+    
+    <!-- https://svground.fr/le-texte-en-svg.php -->
+
+       <!-- Horizontal center SVG text -->
+        <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Centrage de texte avec la propriété text-anchor</title>
+
+        <!-- ligne verticale -->
+        <line x1="200" y1="20" x2="200" y2="280"/>
+
+        <!-- CSS: text-anchor:start -->
+        <text x="200" y="100">Aligné avec le début</text>
+        <circle cx="200" cy="100" r="2"/>
+
+        <!-- CSS: text-anchor:middle -->
+        <text id="middle" x="200" y="175">Aligné avec le milieu</text>
+        <circle cx="200" cy="175" r="2"/>
+
+        <!-- CSS: text-anchor:end -->
+        <text id="end" x="200" y="250">Aligné avec la fin</text>
+        <circle cx="200" cy="250" r="2"/>
+
+        </svg>
+
+
+    </body>
+</html>

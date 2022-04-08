@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="text.css">
+    <title>SVG Text</title>
+</head>
+<body>   
+    
+    <!-- https://svground.fr/le-texte-en-svg.php -->
+
+    
+             <!-- Vertical center SVG text -->
+             <svg width="50%" height="100%" xml:lang="fr" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid meet"
+             xmlns="http://www.w3.org/2000/svg"
+             xmlns:xlink="http://www.w3.org/1999/xlink">
+ 
+             <title>Centrage vertical de texte avec baseline-shift</title>
+ 
+             <!-- cadre entourant la zone de dessin -->
+             <rect x="0" y="0" width="400" height="300"/>
+ 
+             <text id="un-demi-em" x="200" y="100"><tspan>Moins un demi em</tspan></text>
+             <line x1="50" x2="350" y1="100" y2="100"/>
+ 
+             <text id="un-demi-ex" x="200" y="200"><tspan>Moins un demi ex</tspan></text>
+             <line x1="50" x2="350" y1="200" y2="200"/>
+ 
+             <!-- textes dans les coins -->
+ 
+             <text id="haut-gauche" x="0" y="0"><tspan>Haut gauche</tspan></text>
+ 
+             <text id="haut-droit" x="400" y="0"><tspan>Haut droit</tspan></text>
+ 
+             <text x="0" y="300">Bas gauche</text>
+ 
+             <text id="bas-droit" x="400" y="300">Bas droit</text>
+ 
+         </svg>
+ 
+
+
+    </body>
+</html>

@@ -1,0 +1,90 @@
+rect{
+	fill:none;
+	stroke:black;
+}
+
+#ligne1{
+	font-size:18px;
+	text-decoration:underline;
+}
+
+#ligne2{
+	font-size:70px;
+	letter-spacing:-4px;
+	fill:linen;
+	fill-opacity:0.5;
+	stroke:lightsteelblue;
+	stroke-width:3px;
+}
+
+#ligne3{
+	font-size:200px;
+	font-weight:bold;
+	fill:none;
+	stroke:gold;
+	stroke-opacity:0.5;
+	stroke-width:6px;
+	stroke-dasharray:10,5;
+}
+
+
+
+/* Center text (Horizontal)*/
+text{
+	font-size:20px;
+}
+
+/* on ne met rien pour le premier car la valeur par défaut est start */
+
+#middle{
+	text-anchor:middle;
+}
+
+#end{
+	text-anchor:end;
+}
+
+
+
+/* Center text (Vertical)*/
+rect, line{
+	fill:none;
+	stroke:black;
+}
+
+text{
+	font-size:16px;
+}
+
+#un-demi-em{
+	font-size:26px;
+	text-anchor:middle;
+}
+
+#un-demi-em > tspan{
+	baseline-shift:-0.5em;
+}
+
+#un-demi-ex{
+	font-size:26px;
+	text-anchor:middle;
+}
+
+#un-demi-ex > tspan{
+	baseline-shift:-0.5ex;
+}
+
+#haut-gauche > tspan{
+	baseline-shift:-1em;
+}
+
+#haut-droit > tspan{
+	text-anchor:end;
+	baseline-shift:-1em;
+}
+
+/* pas besoin de changement pour le texte en bas à gauche */
+
+#bas-droit{
+	text-anchor:end;
+}

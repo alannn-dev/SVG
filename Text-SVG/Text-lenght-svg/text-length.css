@@ -1,0 +1,8 @@
+text{
+	font-size:24px;
+	/* centrage horizontal et vertical */
+	text-anchor:middle;
+}
+text > tspan{
+	baseline-shift:-0.5ex;
+	}

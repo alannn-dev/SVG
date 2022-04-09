@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="text-path.css">
+    <title>Text path svg</title>
+</head>
+<body>
+    
+
+    <!-- https://svground.fr/le-texte-en-svg.php#longueur -->
+    
+    <svg width="50%" height="100%" viewBox="0 0 400 700" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Du texte sur un chemin</title>
+
+        <path id="chemin" d="M 50,150 Q 100,38 200,150 T 380,160"/>
+
+        <text>
+            <textPath xlink:href="#chemin"> <!-- On selectionne l'id #chemin -->
+            Vrou vroum vrrroooooouuuuuuummmmmm hhhhhhhhhhhiiiiiiiiiiiiiiiikkkkkkkkkkkkkkkkkkkk
+            </textPath>
+        </text>
+
+    </svg>
+
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+path{
+	fill:none;
+	stroke:gainsboro;
+	stroke-dasharray:5,8;
+}
+
+text{
+	font-size:20px;
+	text-anchor:middle;
+}

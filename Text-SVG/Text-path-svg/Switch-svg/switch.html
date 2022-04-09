@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch svg</title>
+</head>
+<body>
+    
+
+    <!-- https://svground.fr/le-texte-en-svg.php#xmlspace -->
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Le traitement conditionnel en fonction de la langue</title>
+
+        <switch>
+            <text x="200" y="150" systemLanguage="en">Hello !</text>
+            <text x="200" y="150" systemLanguage="es">Hola !</text>
+            <text x="200" y="150" systemLanguage="fr">Bonjour !</text>
+            <text x="200" y="150">Texte affiché si l’anglais, l’espagnol et le français ne sont pas reconnus.</text>
+            <text x="200" y="150" systemLanguage="EO">Bonan tagon (bonjour en esperanto jamais affiché puisque le frère précédent n’a pas d’attribut systemLanguage)</text>
+        </switch>
+
+    </svg>
+
+</body>
+</html>

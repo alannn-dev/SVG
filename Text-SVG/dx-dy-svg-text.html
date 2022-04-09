@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glissement texte et tspan</title>
+</head>
+<body>
+    
+
+    <!-- https://svground.fr/le-texte-en-svg.php -->
+
+    <style>
+    text{
+	font-size:16px;
+    }
+
+    #vague{
+        text-anchor:middle;
+        letter-spacing:2px;
+    }
+    </style>
+
+
+<!-- dx + dy pour déplacer les tspan à l'horizontale ou verticale -->
+
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Les attributs dx et dy</title>
+
+        <text x="10" y="75">W
+        <tspan dx="50">a</tspan>
+        <tspan dx="40">h</tspan>
+        <tspan dx="30">o</tspan>
+        <tspan dx="20">o</tspan>
+        <tspan dx="10">o</tspan>
+        uu</text>
+
+        <text x="250" y="150">Ceci est <tspan dy="-20">un</tspan> test</text>
+
+        <text id="vague" x="200" y="280">Ceci
+        <tspan dy="-2">e</tspan>
+        <tspan dy="-3">s</tspan>
+        <tspan dy="-4">t</tspan>
+        <tspan dy="-5"> </tspan>
+        <tspan dy="-6">u</tspan>
+        <tspan dy="-7">n</tspan>
+        <tspan dy="-8">e</tspan>
+        <tspan dy="-9"> </tspan>
+        <tspan dy="-8">t</tspan>
+        <tspan dy="-7">rè</tspan>
+        <!-- -59 -->
+        <tspan dy="9">s</tspan>
+        <tspan dy="10"> </tspan>
+        <tspan dy="9">g</tspan>
+        <tspan dy="8">r</tspan>
+        <tspan dy="7">o</tspan>
+        <tspan dy="6">s</tspan>
+        <tspan dy="5">s</tspan>
+        <tspan dy="3">e</tspan>
+        <tspan dy="2"> </tspan>
+        <!-- +59 -->
+        vague</text>
+
+    </svg>
+
+
+    <!-- Une ligne dx ou dy : Un num pour chaque lettre -->
+
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Plusieurs valeurs pour l’attributs dy</title>
+
+        <text x="100" y="300"
+        dy="0 -1 -2 -4 -8 -16 -32 -48 -60"
+        dx="1 2 4 8 16 32 48 60 60">Décollage</text>
+
+    </svg>
+
+</body>
+</html>

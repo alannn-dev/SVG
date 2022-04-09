@@ -1,0 +1,14 @@
+.text1{
+    font-size:20px;
+    /* centrage */
+    text-anchor:middle;
+    vertical-align:-0.5ex;
+    /* ajout d’une espace entre les lettres pour qu’elles ne soient pas écrasées */
+    letter-spacing:10px;
+}
+.text2{
+    font-size:20px;
+    writing-mode: tb;
+    /* Centrage*/
+    text-anchor:middle;
+}

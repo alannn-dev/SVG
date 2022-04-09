@@ -62,7 +62,7 @@ text{
 }
 
 #un-demi-em > tspan{
-	baseline-shift:-0.5em;
+	vertical-align:-0.5em;
 }
 
 #un-demi-ex{
@@ -71,16 +71,16 @@ text{
 }
 
 #un-demi-ex > tspan{
-	baseline-shift:-0.5ex;
+	vertical-align:-0.5ex;
 }
 
 #haut-gauche > tspan{
-	baseline-shift:-1em;
+	vertical-align:-1em;
 }
 
 #haut-droit > tspan{
 	text-anchor:end;
-	baseline-shift:-1em;
+	vertical-align:-1em;
 }
 
 /* pas besoin de changement pour le texte en bas à gauche */

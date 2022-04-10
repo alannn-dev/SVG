@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fill-attribute-svg.css">
+    <title>End svg attribute</title>
+</head>
+<body>
+
+    <!-- https://svground.fr/animations-chapitre-1.php -->
+    
+    <svg width="100%" height="100%" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+        <title>Gel d’animation avec l’attribut fill</title>
+        
+        <circle cx="200" cy="150" r="10">
+            <animate attributeName="r" attributeType="XML" id="grossissement"
+            from="10" to="100"
+            begin="5s" dur="7s" fill="freeze"/>
+        
+            <animate attributeName="stroke-width" attributeType="CSS"
+            from="1" to="20"
+            begin="grossissement.begin" dur="7s" fill="freeze"/>
+        
+            <animate attributeName="stroke-opacity" attributeType="CSS"
+            from="1" to="0"
+            begin="grossissement.end" dur="3s" fill="freeze"/>
+        </circle>
+
+    </svg>  
+
+        
+</body>
+</html>

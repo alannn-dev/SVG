@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="repeatCount.css">
+    <title>Repeat count svg</title>
+</head>
+<body>
+
+    <!-- https://svground.fr/animations-chapitre-1.php -->
+
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        
+        <title>Répétition d’animation</title>
+        
+        <path d="M 10,150 L 10,150 q 30,-40 60,0 L 390,150">
+        
+            <animate attributeName="d" attributeType="XML"
+            from="M 10,150 L 10,150 q 30,-40 60,0 L 390,150"
+            to="M 10,150 L 330,150 q 30,0 60,0 L 390,150"
+            begin="1.3s" dur="2s"
+            repeatCount="indefinite"/>
+        
+        </path>
+    
+    </svg>
+    
+</body>
+</html>

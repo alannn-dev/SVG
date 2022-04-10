@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animate-color-svg.css">
+    <title>Animate color svg</title>
+</head>
+<body>
+
+
+
+    <svg width="400" height="300" xml:lang="fr"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <title>Animation de couleur</title>
+
+        <ellipse cx="200" cy="150" rx="190" ry="100">
+            <animate attributeName="fill" attributeType="CSS" id="engris">
+            from="lightblue" to="#ffd700"
+            begin="3s" dur="5s"/>
+            
+            <animate attributeName="fill" attributeType="CSS"
+            from="#ffd700" to="lightblue"
+            begin="engris.end" dur="5s"
+            repeatCount="indefinite"/>
+        </ellipse>
+
+    </svg>
+    
+</body>
+</html>

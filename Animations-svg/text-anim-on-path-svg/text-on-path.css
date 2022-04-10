@@ -1,0 +1,13 @@
+path{
+	fill:none;
+	stroke:yellowgreen;
+	stroke-linecap:round;
+	stroke-width:1.1em; /* pour qu’il puisse contenir tout le texte */
+}
+
+text{
+	letter-spacing:2px;
+}
+text > textPath{
+	baseline-shift:-0.7ex;
+}

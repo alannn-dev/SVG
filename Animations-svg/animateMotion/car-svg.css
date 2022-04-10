@@ -1,0 +1,9 @@
+rect, path, circle, line{
+	fill:none;
+	stroke:black;
+	stroke-width:1px;
+}
+
+circle{
+	fill:white;
+}

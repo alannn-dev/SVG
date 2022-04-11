@@ -1,0 +1,18 @@
+rect, ellipse{
+	fill:url(goutte.svg#motif);
+	stroke:black;
+	stroke-width:1px;
+}
+
+#patternRect{
+	fill:none;
+}
+
+polyline{
+	fill:none;
+	stroke:mediumseagreen;
+	stroke-width:3px;
+	stroke-linejoin:round;
+}
+
+/* ainsi, tous les rectangles seront texturés selont notre pattern */

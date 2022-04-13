@@ -1,0 +1,10 @@
+text{
+	text-anchor:middle;
+	font-size:75px;
+	}
+
+@keyframes openYourHeart {from {r: 0} to {r: 60px}}
+
+#myClip circle {
+    animation: openYourHeart 15s infinite;
+}

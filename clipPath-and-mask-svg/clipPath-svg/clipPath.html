@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="clipPath.css">
+    <title>ClipPath svg</title>
+</head>
+<body>
+    
+
+    <!-- https://developer.mozilla.org/fr/docs/Web/SVG/Element/clipPath -->
+
+    <svg viewBox="0 0 100 100">
+        <clipPath id="myClip">
+          <!-- La forme créée par le détourage est un simple cercle. -->
+          <circle cx="40" cy="35" r="35" />
+        </clipPath>
+      
+        <!-- Le coeur sans détourage, pour référence -->
+        <path id="heart" d="M10,30 A20,20,0,0,1,50,30 A20,20,0,0,1,90,30 Q90,60,50,90 Q10,60,10,30 Z" />
+      
+        <!--
+          Le coeur avec détourage.
+          Seule la partie à l'intérieur du cercle est visible.
+        -->
+        <use clip-path="url(#myClip)" xlink:href="#heart" fill="red" />
+      </svg>
+
+
+
+      
+    <!-- https://svground.fr/clip-et-mask.php#masques -->
+    
+<!--         <svg width="400" height="300" xml:lang="fr"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink">
+
+            <title>Utilisation d’une découpe grâce à l’élément clipPath</title>
+
+            <defs>
+ -->                <!-- définition de la découpe -->
+<!--                 <clipPath id="decoupe">
+                    <circle cx="300" cy="100" r="90"/>
+                    <text x="200" y="270">SVGround</text>
+                </clipPath>
+            </defs>
+
+            <image id="img" xlink:href="kobe.png" width="400" height="300"/>
+
+        </svg>
+ -->
+</body>
+</html>
